@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "advice"
+version = "0.1.0"
+license = "MIT"
+description = "Fetch some random advice from api.adviceslip.com"
+homepage = "https://github.com/kevr/advice"
+repository = "https://github.com/kevr/advice"
+documentation = "https://github.com/kevr/advice/-/blob/master/README.md"
+keywords = ["advice", "api"]
+authors = ["Kevin Morris <kevr@0cost.org>"]
+maintainers = ["Kevin Morris <kevr@0cost.org>"]
+packages = [ { include = "aurweb" } ]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/kevr/advice/-/issues"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+
+[build-system]
+requires = ["poetry>=1.1.8", "poetry-dynamic-versioning"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry.dev-dependencies]
+requests = { version = ">=2.26.0", python = "^3.9" }
+poetry-dynamic-versioning = { version = "0.13.1", python = "^3.9" }
+
+[tool.poetry.scripts]
+advice = "advice.client:main"
