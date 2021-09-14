@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "advice"
-version = "0.1.1"
+version = "0.1.2"
 license = "MIT"
 description = "Fetch some random advice from api.adviceslip.com"
 homepage = "https://github.com/kevr/advice"
@@ -9,7 +9,7 @@ documentation = "https://github.com/kevr/advice/-/blob/master/README.md"
 keywords = ["advice", "api"]
 authors = ["Kevin Morris <kevr@0cost.org>"]
 maintainers = ["Kevin Morris <kevr@0cost.org>"]
-packages = [ { include = "aurweb" } ]
+packages = [ { include = "advice" } ]
 
 [tool.poetry.urls]
 "Bug Tracker" = "https://github.com/kevr/advice/-/issues"
